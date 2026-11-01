@@ -1,0 +1,6 @@
+awk -F, 'NR>1 && $5 > 50 {print $4 " | zajetosc: " $5 "% | wolne: " $6}' inwentarz.csv
+
+
+/dev/sdb | zajetosc: 100% | wolne: 0
+drivers | zajetosc: 79% | wolne: 202G
+C:\ | zajetosc: 79% | wolne: 202G

@@ -1,0 +1,18 @@
+=== SUID root ===
+find / -xdev -type f -perm -4000 -user root 2>/dev/null | wc -l
+14
+Interpretacja: znaleziono 14 plikow SUID nalezacych do root. Jest to zwykle normalne, 
+poniewaz niektore narzedzia systemowe wymagaja czasowego podniesienia uprawnien.
+=== PERM 002 ===
+find / -xdev -type d -perm -002 2>/dev/null | grep -vE '^/tmp$|^/var/tmp$' | wc -l
+4
+Po wykluczeniu katalogów /tmp i /var/tmp znaleziono 4 katalogi zapisywalne dla wszystkich 
+użytkowników. W analizowanym systemie są to katalogi związane z WSL oraz katalog /var/crash, 
+dlatego nie wyglądają podejrzanie i ich obecność można uznać za normalną.
+=== f > 50MB in /var ===
+find /var -xdev -type f -size +50M 2>/dev/null
+3
+Znaleziono 3 pliki większe niż 50 MB w katalogu /var. Wszystkie są związane z działaniem systemu pakietów APT (listy pakietów i cache), dlatego ich obecność można uznać za normalną.
+=== !modify > 365days ===
+find ~ -type f -mtime +365
+Znaleziono 0 plików niezmienianych od ponad 365 dni w katalogu domowym. Jest to zgodne z oczekiwaniami, ponieważ instalacja systemu jest stosunkowo nowa i nie zawiera wieloletnich danych użytkownika.
