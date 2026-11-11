@@ -1,0 +1,42 @@
+#ss -ltn
+State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+
+#find /var/log -name "*.gz"
+/var/log/dmesg.3.gz
+/var/log/dmesg.1.gz
+/var/log/unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+/var/log/unattended-upgrades/unattended-upgrades.log.1.gz
+/var/log/kern.log.3.gz
+/var/log/syslog.3.gz
+/var/log/dmesg.4.gz
+/var/log/syslog.4.gz
+/var/log/apt/history.log.1.gz
+/var/log/apt/term.log.1.gz
+/var/log/kern.log.4.gz
+/var/log/dmesg.2.gz
+/var/log/auth.log.4.gz
+/var/log/auth.log.2.gz
+/var/log/syslog.2.gz
+/var/log/kern.log.2.gz
+/var/log/auth.log.3.gz
+/var/log/dmesg.3.gz
+/var/log/dmesg.1.gz
+/var/log/unattended-upgrades/unattended-upgrades-dpkg.log.1.gz
+/var/log/unattended-upgrades/unattended-upgrades.log.1.gz
+/var/log/kern.log.3.gz
+/var/log/syslog.3.gz
+/var/log/dmesg.4.gz
+/var/log/syslog.4.gz
+/var/log/apt/history.log.1.gz
+/var/log/apt/term.log.1.gz
+/var/log/kern.log.4.gz
+/var/log/dmesg.2.gz
+/var/log/auth.log.4.gz
+/var/log/auth.log.2.gz
+/var/log/syslog.2.gz
+/var/log/kern.log.2.gz
+/var/log/auth.log.3.gz
+

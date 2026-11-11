@@ -1,0 +1,8 @@
+#sudo chown tester1:developers /home/project
+#sudo chmod 570 /home/project
+#sudo ls-la /home/project
+total 8
+dr-xrwx--- 2 tester1 developers 4096 Oct  8 17:11 .
+drwxr-xr-x 9 root    root       4096 Oct  8 17:11 ..
+#groups developer1
+developer1 : developer1 developers

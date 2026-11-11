@@ -1,19 +1,12 @@
-Backup Tool
-Simple Bash project for creating directory backups.
+Backup Project
+Projekt demonstracyjny do nauki Git Flow.
 
-Features
-Create compressed backups using tar.gz
-Automatically generate backup names using timestamp
-Store backups in dedicated directory
+Funkcje
+tworzenie kopii zapasowych
+przywracanie danych
+testy automatyczne
+integracja CI
+
 Requirements
+Git
 Bash
-tar
-Usage
-./backup.sh /path/to/directory
-Project Structure
-.
-├── backup.sh
-├── README.md
-└── .gitignore
-Author
-Martin Karwacki
